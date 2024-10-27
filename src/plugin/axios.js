@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const api = axios.create({
-  baseURL: import.meta.env.VITE_URL_DAY_55,
+  baseURL: "https://671bcd5f2c842d92c3815b3d.mockapi.io/day_55",
 });
 
 const getJobsFormAPI = async () => {
