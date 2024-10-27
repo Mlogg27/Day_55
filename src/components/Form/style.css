@@ -1,0 +1,15 @@
+.input-name {
+  outline: none;
+  width: 100%;
+  padding: 5px 10px;
+}
+.priority-select {
+  outline: none;
+  padding: 5px 10px;
+}
+.form-box {
+  min-height: 200px;
+  box-sizing: border-box;
+  padding: 0 40px;
+  background-color: #00afb5 !important;
+}
