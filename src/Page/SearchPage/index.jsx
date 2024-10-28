@@ -48,7 +48,7 @@ export default function(){
                 <Search/>
                 <ul className='mt-[20px] flex gap-y-[20px] gap-x-[25px] flex-wrap justify-center items-center'>
                 {
-                    jobs.filter((job)=> job.name === searchStr).map((job, index)=>{
+                    jobs.filter((job)=> job.name.toLowerCase().includes(searchStr.toLowerCase())).map((job, index)=>{
                         return <li className='flex flex-col gap-y-[5px] py-[5px] px-[10px] rounded-[6px] w-[300px]'  style={{ backgroundColor: priorityColor(job.priority) }}  key={index}>
                             <p>Name: {job.name}</p>
                             <p>Priority: {job.priority}</p>
